@@ -457,8 +457,9 @@ img {
 }
 
 .icon-link {
-  display: block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -487,8 +488,11 @@ img {
 
 .list.clients {
   display: flex;
-  justify-content: space-between;
   cursor: pointer;
+}
+
+.clients-link:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* .clients-link {
@@ -621,6 +625,7 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .contacts-nav {
@@ -649,9 +654,7 @@ img {
 .footer .icon-link:focus {
   background-color: var(--accent-color);
 }
-.container-social {
-  margin-top: 12px;
-}
+
 /*========== END FOOTER==========*/
 
 /* == */ ;
